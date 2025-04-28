@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import PokemonCard from './components/PokemonCard'
-import SearchBar from './components/SearchBar'
-import TypeFilter from "./components/TypeFilter";
+import PokemonCard from '@/components/ PokemonCard'
+import SearchBar from '@/components/  SearchBar'
+import TypeFilter from "@/components/TypeFilter";
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([]);
@@ -53,10 +53,8 @@ export default function Home() {
     setFilteredPokemons(filtered);
   }, [searchTerm, selectedType, pokemons]);
 
-  if (loading) 
-    return <h2 className="text-center text-2xl mt-10">Loading...</h2>;
-  if (error) 
-    return <h2 className="text-center text-red-500 mt-10">{error}</h2>;
+  if (loading) return <h2 className="text-center text-2xl mt-10">Loading...</h2>;
+  if (error) return <h2 className="text-center text-red-500 mt-10">{error}</h2>;
 
   return (
     <div className="p-4">
