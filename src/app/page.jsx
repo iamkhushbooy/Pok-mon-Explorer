@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import PokemonCard from '@/components/ PokemonCard'
-import SearchBar from '@/components/  SearchBar'
-import TypeFilter from "@/components/TypeFilter";
+import PokemonCard from './components/PokemonCard'
+import SearchBar from './components/SearchBar'
+import TypeFilter from "./components/TypeFilter";
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([]);
