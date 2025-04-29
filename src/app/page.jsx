@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="p-4">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-blue-600">Pokémon Explorer</h1>
+        <h1 className="text-4xl font-bold text-blue-600">Pokemon Explorer</h1>
       </header>
       
       <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
